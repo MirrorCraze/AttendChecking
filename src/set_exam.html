@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Set Class</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <style>
+      .spacing {
+        width: auto;
+        margin-left: 25%;
+        margin-right: 25%;
+      }
+      html {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+      }
+      form {
+        margin-bottom: 25%;
+        padding: 10% 20%;
+        background-color: rgba(255, 255, 255, 0.5);
+      }
+      .fixx {
+        margin-top: 20vh;
+        color: white;
+      }
+      @media screen and (max-width: 425px){
+        .fixx {
+          margin-top: 50%;
+          color: white;
+        }
+      }
+
+
+      body {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://cdn-images-1.medium.com/max/1000/1*pQUTGu0kiDZEQxUslhhR2A.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        ba
+      }
+      </style>
+  </head>
+  <body class="spacing">
+    <h1 class="fixx">Examination Setting</h1>
+    <div class="fill_in">
+      <form class="form rounded" action="menu.html" method="get" onsubmit="save_json()">
+        <div>
+        <label for="class">Class : </label>
+        <select name="class">
+          <option value="CB2300">CB2300</option>
+          <option value="CS1102">CS1102</option>
+          <option value="CS2204">CS2204</option>
+        </select>
+      </div>
+        <div>
+        <label for="time_start">Recording start</label>
+        <input type="time" name="time_start" value="09:00">
+        </div>
+        <div>
+        <label for="time_stop">Recording stop</label>
+        <input type="time" name="time_stop" value="09:30">
+        </div>
+        <div>
+        <label for="time_late">Late entrance</label>
+        <input type="time" name="time_late" value="09:15">
+        </div>
+        <div>
+        <label for="day">Examination Date</label>
+        <input type="date" name="day">
+        </div>
+        <div>
+        <input type="hidden" name="type" value="exam">
+        <input type="submit" name="submit" value="submit">
+        </div>
+      </form>
+
+    </div>
+
+    <script type="text/javascript">
+      function save_json()
+      {
+        var time_start = document.querySelector(input[name='time_start']).value;
+        alert(time_start);
+      }
+    </script>
+  </body>
+</html>

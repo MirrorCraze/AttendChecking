@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Previous Session</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style media="screen">
+      thead{
+        width: 100%;
+      }
+      th, td{
+        border :1px solid black;
+        width: 15% !important;
+      }
+      th {
+        background-color: rgba(0,0,255,0.6);
+        color: white;
+      }
+      td {
+        background-color: rgba(255,255,255,0.4);
+      }
+      body {
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: skyblue;
+     }
+     h2 {
+       background-color: rgba(255,255,255,0.4);
+       padding: 12px;
+       font-style: italic;
+     }
+    </style>
+  </head>
+
+  <body>
+    <div class="queue">
+      <h2 class="rounded-bottom">
+        Schedule
+      </h2>
+      <form action="index.html" method="post">
+        <table>
+          <thead>
+            <th>Check</th>
+            <th>Class No.</th>
+            <th>Start</th>
+            <th>Stop</th>
+            <th>Late</th>
+            <th>Date</th>
+            <th >Type</th>
+          </thead>
+          <tr>
+            <td><input type="checkbox" name="CS2300" value="unchecked"></td>
+            <td>CS2300</td>
+            <td>09:00</td>
+            <td>10:30</td>
+            <td>9:15</td>
+            <td>Fri</td>
+            <td>Class</td>
+          </tr>
+        </table>
+        <input type="submit" name="submit" value="export csv file">
+      </form>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+    img {
+
+    }
+    html {
+
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      background: url("https://www.cityu.edu.hk/pol/images/08.JPG")  no-repeat;
+      background-size: cover;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+      #Text_special{
+        color: white;
+        text: bold;
+      }
+      .containers{
+        width: 100% !important;
+        height: auto;
+        padding: 3%;
+        background-color: #acafff;
+        display: inline-block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+      h2 {
+        color: white;
+        background-color: gray;
+        width: 100%;
+        padding: 3%;
+      }
+      .spacing{
+        width: auto;
+        margin-bottom: 0.5%;
+      }
+      .bglightgray{
+        color: white;
+        padding: 0.2%;
+        padding-left: 1.5%;
+      }
+      body {
+        background-color: inherit;
+
+      }
+      input {
+        width: 20% ;
+        margin-left: 45%;
+        margin-right: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="rounded-bottom">Welcome to Attendance Checking System</h2>
+    <p class="containers rounded"> AttendCheck is the web application that checks CityU students' attendance for lessons and examination.
+        It executes by using two cameras which are at the entrant and exit doors of the lecture theatres with
+        facial recognition function to detect students' faces and record their attendance.
+        Therefore, professors will have more precise students' attendance records and spare less time to check them.
+        <br><br><span id="Text_special"><b>You can access to the system by clicking on the following button</b></span>
+      </p>
+    <form>
+      <input type = "button" onclick = "window.location.href = 'login.html' " class="btn btn-primary spacing" value="Login"></input>
+    </form>
+
+  </body>
+</html>

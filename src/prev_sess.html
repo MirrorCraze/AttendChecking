@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Previous Session</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style media="screen">
+      th, td{
+        border :1px solid black;
+      }
+      th {
+        background-color: rgba(0,0,255,0.6);
+        color: white;
+      }
+      td {
+        background-color: rgba(255,255,255,0.4);
+      }
+      #options{
+        width: 5%;
+      }
+      img{
+        display: block;
+        width: 100%;
+      }
+      body {
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: skyblue;
+     }
+     h2 {
+       background-color: rgba(255,255,255,0.4);
+       padding: 12px;
+       font-style: italic;
+       font-size: 60px;
+       color: gray;
+       text-align: center;
+       text-shadow: 1px 2px #ffffff;
+     }
+     #pic_sche{
+       display: inline-block;
+       width: 20%;
+     }
+    </style>
+  </head>
+
+  <body>
+    <div class="queue">
+      <div class="header">
+        <h2 class="rounded-bottom">
+          <img id = "pic_sche" src="https://www.shiftboard.com/wp-content/uploads/2018/03/product-overview-scheduling.png" >
+          Session Record
+        </h2>
+
+      </div>
+
+      <table>
+        <thead>
+          <th>Class No.</th>
+          <th>Start</th>
+          <th>Stop</th>
+          <th>Late</th>
+          <th>Date</th>
+          <th >Type</th>
+          <th id="options" colspan="2">Options</th>
+        </thead>
+        <tr>
+          <td>CS2300</td>
+          <td>09:00</td>
+          <td>10:30</td>
+          <td>9:15</td>
+          <td>Fri</td>
+          <td>Class</td>
+          <td><img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/trash-circle-red-512.png" alt="del" onclick = delete()></td>
+          <td><img src="http://icons-for-free.com/free-icons/png/512/1495216.png" alt="edit"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

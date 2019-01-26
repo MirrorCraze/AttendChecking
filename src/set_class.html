@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Set Class</title>
+  </head>
+  <body>
+    <div class="fill_in">
+      <form class="form" action="menu.html" method="post">
+        <label for="class">Class : </label>
+        <select name="class">
+          <option value="CB2300">CB2300</option>
+          <option value="CS1102">CS1102</option>
+          <option value="CS2204">CS2204</option>
+        </select>
+        <label for="time_start">Recording start</label>
+        <input type="time" name="time_start" value="09:00">
+        <label for="time_stop">Recording stop</label>
+        <input type="time" name="time_stop" value="09:30">
+        <label for="time_late">Late entrance</label>
+        <input type="time" name="time_late" value="09:15">
+        <label for="day">Class</label>
+        <select name="day">
+          <option value="sun">Sunday</option>
+          <option value="mon">Monday</option>
+          <option value="tue">Tuesday</option>
+          <option value="wed">Wednesday</option>
+          <option value="thu">Thursday</option>
+          <option value="fri">Friday</option>
+          <option value="sat">Saturday</option>
+        </select>
+        <input type="hidden" name="type" value="class">
+        <input type="submit" name="submit" value="submit">
+      </form>
+    </div>
+  </body>
+</html>
