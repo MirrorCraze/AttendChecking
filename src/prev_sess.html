@@ -150,16 +150,16 @@
     {
       console.log(Object.keys(localStorage));
       key = Object.keys(localStorage);
-      alert(key);
+      //alert(key);
       var history = document.querySelector('#all_history');
 
       for (var subject in key){
 
-        alert("SJ" + subject)
+        //alert("SJ" + subject)
         var sub = JSON.parse(localStorage.getItem(key[subject]));
         console.log(sub);
         subkey = Object.keys(sub);
-        alert("SUB " + subkey);
+        //alert("SUB " + subkey);
         console.log(sub[subkey]);
         var row_amount_history = history.rows.length;
         var newrow = history.insertRow(row_amount_history);
