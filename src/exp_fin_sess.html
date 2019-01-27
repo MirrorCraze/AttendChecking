@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Previous Session</title>
+    <title>Export Session</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -44,25 +44,31 @@
       th {
         background-color: rgba(15,15,15,0.6);
         color: white;
-        font-style: italic;
+        text-align: center;
       }
       td {
         background-color: rgba(255,255,255,0.4);
+        text-align: center;
       }
       body {
         margin-left: 0%;
         margin-right: 0%;
-        background-color: #d0d0d0;
+        background-color: #ffffff;
+     }
+     .button1{
+       margin-top: 10px;
+       width:100%;
+       text-align: center;
      }
      h2 {
        background-image: url("http://www.syitc.com/wp-content/uploads/2012/01/shutterstock_469392011-e1327991187480-651x253.jpg");
        background-repeat: no-repeat;
        background-size: cover;
        opacity: 0.8;
+       font-size:60px;
        padding: 12px;
-       font-style: italic;
        color: #ffffff;
-       text-shadow: 1px 2px #ffa0a5;
+       text-shadow: 1px 2px #555555;
      }
     </style>
   </head>
@@ -112,10 +118,11 @@
             <th>Stop</th>
             <th>Late</th>
             <th>Type</th>
-            <th>Export?</th>
           </thead>
         </table>
-          <button onclick="exportTableToCSV('Student_file.csv')"> Export Data</button>
+        <div class="button1">
+          <button onclick="exportTableToCSV('Student_file.csv')" class="btn btn-secondary"> Export Data</button>
+        </div>
       </div>
       </form>
 

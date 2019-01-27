@@ -17,34 +17,49 @@
       margin-left: 42%;
       margin-right: 13%;
     }
-    @media only screen and (max-width: 993px) {
-      .spacing{
-        margin-left: 25%;
-        margin-right: 25%;
-      }
-    }
+
     html {
       position: fixed;
       height: 100%;
       width: 100%;
     }
     form {
-      margin-bottom: 25%;
       padding: 10% 20%;
+      padding-bottom: 100px;
       background-color: rgba(255, 255, 255, 0.5);
     }
     .fixx {
       margin-top: 20vh;
       color: white;
-      font-style: italic;
     }
     body {
       height: 100%;
       width: 100%;
-      background-image: url("https://www.lifeskills4kids.com.au/wp-content/uploads/2018/02/Identifying-Sensory-Issues-that-Impact-Learning-in-the-Classroom-610x353.jpg");
+      background-image: url("https://resize.indiatvnews.com/en/centered/oldbucket/715_431/lifestylelifestyle/IndiaTv89d091_book-over--cinema-1.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+    }
+    input,select{
+      display: inline-block;
+      float: right;
+      width: 39%;
+      margin-right: 10%;
+    }
+      @media only screen and (max-width: 993px) {
+        .spacing{
+          margin-left: 25%;
+          margin-right: 25%;
+        }
+        input,select{
+          margin-right: 15%;
+          display: inline-block;
+          float: right;
+          width: 85%;
+          margin-right: 10%;
+
+        }
+
     }
     </style>
   </head>
@@ -90,19 +105,19 @@
           <option value="CS2204">CS2204</option>
         </select>
         <div>
-        <label for="time_start">Recording start</label>
+        <label for="time_start">Recording start:</label>
         <input type="time" name="time_start" value="09:00">
         </div>
         <div>
-        <label for="time_stop">Recording stop</label>
+        <label for="time_stop">Recording stop:</label>
         <input type="time" name="time_stop" value="09:30">
         </div>
         <div>
-        <label for="time_late">Late entrance</label>
+        <label for="time_late">Late entrance:</label>
         <input type="time" name="time_late" value="09:15">
         </div>
         <div>
-        <label for="date">Class</label>
+        <label for="date">Class:</label>
         <select name="date" id = "date">
           <option value="sun">Sunday</option>
           <option value="mon">Monday</option>
@@ -112,9 +127,10 @@
           <option value="fri">Friday</option>
           <option value="sat">Saturday</option>
         </select>
-        </div>
         <input type="hidden" name="type" value="class">
-        <input type="submit" name="submit" value="submit">
+        <input type="submit" name="submit" value="Submit" class="btn btn-secondary">
+        </div>
+        
       </form>
     </div>
     <script>

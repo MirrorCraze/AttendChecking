@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Set Class</title>
+    <title>Set Exam</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -23,9 +23,17 @@
         width: 100%;
       }
       form {
-        margin-bottom: 25%;
         padding: 10% 20%;
+        padding-bottom: 100px;
         background-color: rgba(255, 255, 255, 0.5);
+
+      }
+      input,select{
+        display: inline-block;
+        float: right;
+        width: 40%;
+        margin-right: 10%;
+
       }
       .fixx {
         margin-top: 20vh;
@@ -45,9 +53,17 @@
           margin-left: 25%;
           margin-right: 25%;
         }
+        input,select{
+          margin-left: 15%;
+          display: block;
+          float: right;
+          width: 85%;
+          margin-right: 10%;
+        }
       }
-
-
+      .btn {
+        margin-top: 10px;
+      }
       body {
         height: 100%;
         width: 100%;
@@ -117,10 +133,8 @@
           <label for="day">Examination Date</label>
           <input type="date"  id = "date" name="date">
         </div>
-        <div>
           <input type="hidden"  id = "type" name="type" value="exam">
-          <input type="submit" name="submit" value="submit">
-        </div>
+          <input type="submit" name="submit" value="submit" class="btn btn-secondary">
       </form>
 
     </div>
